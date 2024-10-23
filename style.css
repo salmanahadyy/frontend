@@ -1,61 +1,76 @@
-p{
-  /*  color: rgb(red, green, blue); */
-  /* color: #fff */
-  color: #ff6500;
+.register{
+    height: 40px;
+    width: 100px;
+    background-color: aqua;
+    color: white;
+    position: relative;
+    left: 100px;
+  /*  top: 100px;*/
+  transition: 5s;
+  z-index: 2;
 }
 
-.mobil{
-    color: goldenrod;
+.promo{
+    position: absolute;
+    background-color: crimson;
+    padding: 2px 10px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    rotate: 45deg;
+    top: -5px;
+    right: -25px;
 }
-
-#BMW {
-    color: #fff;
-}
-
-#Ferrari{
-    color: darkblue;
-}
-
-body {
-    /*background-color:hotpink;*/
-   /* background: linear-gradient(45deg, green,blue);*/
-   background:url("./img/prabowo.jpeg") ;
-}
-
-.text{
-    color: firebrick;
-    font-family:fantasy;
-    text-transform:uppercase ;
+.contact{
+    height: 70px;
+    width: 70px;
+    background-color: aquamarine;
+    color: black;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
     text-align: center;
-
-}
-
-.konten{
-    background-color: deeppink;
-    width: 200px ;
-    height:300px ;
     align-content: center;
-    padding: 10px;
-    margin: 50px;
-    border: 8px solid,#fff;
-    border-radius: 15px;
-    transition:2s;
-
+    border-radius: 50%;
 }
 
-.text::first-letter{
-    font-size: 36px;
+.Navbar{
+    height: 80px;
+    width: 100%;
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    align-content: center;
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+}
+.navbar2{
+    height: 30px;
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+text-align: center;
+align-content: center;
+position: sticky;
+top: 80px;
 }
 
-.text:hover::first-letter{
-    color: #fff;
+body{
+    margin: 0;
+    padding: 0;
 }
 
-.konten:hover{
-    background-color:dodgerblue;
-    cursor:pointer;
+/* tablet */
+@media screen and (max-width:768px) {
+    .Navbar{
+        background-color: goldenrod;
+    }
 }
 
-.lorem::first-line{
-    color: #fff;
+/* mobile */
+@media screen and (max-width:480px) {
+    .Navbar{
+        background-color: deeppink;
+    }
 }

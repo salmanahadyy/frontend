@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Animation</title>
+    <style>
+      .box {
+      position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        /*margin: 50px; */
+        /*  transform: perspective(700px) translateX(100px); */
+        animation-name: example;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes example {
+        /*from{
+    background-color: aqua;
+}
+to{
+    background-color: cornflowerblue;
+} */
+
+        0% {
+          background-color: darkorchid;
+          left: 0px;
+          top: 0px;
+          transform: rotate(0deg);
+        }
+        25% {
+          background-color: lightcoral;
+          left: 200px;
+          top: 0px;
+          transform: rotate(-45deg);
+        }
+        50% {
+          background-color: lightskyblue;
+          left: 200px;
+          top: 200px;
+          transform: rotate(-90deg);
+        }
+        75% {
+          background-color: lightgreen;
+          left: 0px;
+          top: 200px;
+          transform: rotate(-135deg);
+        }
+        100% {
+          background-color: blueviolet;
+          left: 0px;
+          top: 0px;
+          transform: rotate(-180deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
