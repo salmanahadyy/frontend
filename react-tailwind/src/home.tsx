@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function HomePage() {
   return (
     <div>
-        <p><Link to ="/home"></Link></p>
+        <p><Link to ="/"></Link></p>
         <div
   className="hero min-h-screen"
   style={{
