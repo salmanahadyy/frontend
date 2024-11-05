@@ -6,9 +6,10 @@ export default function Home() {
       <div
         className="hero min-h-screen"
         style={{
-          backgroundImage: "url(/background.jpg)",
+          backgroundImage: "url(/background.png)",
           backgroundSize: "cover",
-          objectFit: 'contain'
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
         }}
       >
         <div className="hero-overlay bg-opacity-60"></div>

@@ -18,9 +18,10 @@ export default function AboutUsPage() {
           doloribus deleniti corporis.
         </p>
       </div>
-      <div className="text-center font-bold mt-9 text-xl">
+      <div data-aos="fade-up" data-aos-duration="3000">
         <h1>IN THIS SECTION</h1>
       </div>
+      <div className="text-center font-bold mt-9 text-xl"></div>
     </div>
   );
 }
