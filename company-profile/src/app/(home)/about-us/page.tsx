@@ -11,17 +11,17 @@ export default function AboutUsPage() {
         className="h-[400px] mx-auto"
       ></div>
       <div className="font-bold bg-zinc-200 w-[900px] mx-auto px-12 pb-6">
-        <h1 className="p-8 text-xl text-center">ABOUT US</h1>
+        <h1 className="p-8 text-xl text-center underline decoration-red-600">ABOUT US</h1>
         <p className="text-center">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta
           recusandae dolores atque similique pariatur laborum eum perferendis
           doloribus deleniti corporis.
         </p>
       </div>
-      <div data-aos="fade-up" data-aos-duration="3000">
+      <div className="text-center font-bold mt-9 text-xl">
         <h1>IN THIS SECTION</h1>
+
       </div>
-      <div className="text-center font-bold mt-9 text-xl"></div>
     </div>
   );
 }

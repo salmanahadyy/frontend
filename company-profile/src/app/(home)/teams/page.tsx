@@ -10,6 +10,7 @@ export default function TeamPage() {
         <div className="bg-teal-500 w-[350px] h-[500px] mx-10"></div>
         <div className="bg-green-500 w-[350px] h-[500px] mx-10"></div>
         <div className="bg-sky-600 w-[350px] h-[500px] mx-10"></div>
+        
       </Marquee>
       </div>
   );
