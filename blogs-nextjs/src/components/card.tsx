@@ -2,8 +2,9 @@ import { getBlogs } from "@/libs/blog";
 import { IBlog } from "@/types/blog";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 
-export default async function Card() {
+export default async function Card()  {
   const data: IBlog[] = await getBlogs();
   return (
     <div className="flex flex-row gap-20 p-10 rounded-xl justify-center">
@@ -38,11 +39,9 @@ export default async function Card() {
               </div>
             </div>
             <div>
-                <button className="btn btn-primary bg-black border-black text-white h-6">
-                <div>
-                    read more
-                </div>
-                </button>
+              <button className="btn btn-primary bg-black border-black text-white h-6">
+                <div>read more</div>
+              </button>
             </div>
           </Link>
         );
