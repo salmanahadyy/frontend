@@ -13,18 +13,17 @@ export const generateStaticParams = async () => {
   }));
 };
 
-export async function generateMetadata({params}:{params:{slug:string}}){
-const blog:IBlog= await getBlogSlug(params.slug)
-return{
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const blog: IBlog = await getBlogSlug(params.slug);
+  return {
     title: blog.fields.title,
     description: blog.fields.title,
     author: blog.fields.author.fields.name,
-    openGraph:{
-        images:[`https:${blog.fields.thumbnail.fields.file.url}`]
-    }
+    openGraph: {
+      images: [`https:${blog.fields.thumbnail.fields.file.url}`],
+    },
+  };
 }
-}
-
 
 export default async function BlogDetail({
   params,
@@ -32,23 +31,24 @@ export default async function BlogDetail({
   params: { slug: string };
 }) {
   const blog: IBlog = await getBlogSlug(params.slug);
- const options: Options = {
-    renderMark:{
-[MARKS.ITALIC]:(text)=> <span className="italic">{text}</span>
+  const options: Options = {
+    renderMark: {
+      [MARKS.ITALIC]: (text) => <span className="italic">{text}</span>,
     },
-    renderNode:{
-        [BLOCKS.OL_LIST]:(node,children) =><ol className="list-decimal mx-6">{children}</ol>,
-        [BLOCKS.PARAGRAPH]:(node,children) =><p className="my-4">{children}</p>,
+    renderNode: {
+      [BLOCKS.OL_LIST]: (node, children) => <ol className="list-decimal mx-6">{children}</ol>,
+      [BLOCKS.PARAGRAPH]: (node, children) => <p className="my-4">{children}</p>,
     },
- }
+  };
+  
   return (
     <Wrapper>
-      <div className="flex mt-12 w-full">
-        <div className="flex-[2]">
-            <Link href={"/"}>kembali</Link>
+      <div className="flex flex-col lg:flex-row mt-12 w-full max-w-screen-lg mx-auto px-4">
+        <div className="lg:flex-[2] mb-4 lg:mb-0">
+          <Link href={"/"}>kembali</Link>
         </div>
 
-        <div className="flex-[5] box-content pr-56 max-md:pr-0">
+        <div className="lg:flex-[5] box-content pr-0 lg:pr-56">
           <div className="text-md font-bold text-green-700 uppercase">
             <p>{blog.fields.category}</p>
           </div>
@@ -57,15 +57,14 @@ export default async function BlogDetail({
           </div>
           <div className="flex gap-2 text-sm">
             <span className="font-bold">{blog.fields.author.fields.name}</span>
-            <span></span>
             <span>{blog.fields.date}</span>
           </div>
-          <div className="h-[400px] w-full relative my-4">
+          <div className="h-[300px] sm:h-[400px] w-full relative my-4">
             <Image
               src={`https:${blog.fields.thumbnail.fields.file.url}`}
               alt="gambar"
               fill
-              className="object-fill"
+              className="object-cover"
               priority
             />
           </div>
@@ -75,3 +74,4 @@ export default async function BlogDetail({
     </Wrapper>
   );
 }
+
