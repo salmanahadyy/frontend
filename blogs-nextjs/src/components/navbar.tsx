@@ -19,11 +19,6 @@ export default function Navbar() {
               Blogger
             </span>
           </Link>
-          <nav className="hidden md:flex gap-6 text-white">
-            <Link href="/about">About</Link>
-            <Link href="/blog">Blog</Link>
-            <Link href="/contact">Contact</Link>
-          </nav>
         </div>
       </Wrapper>
     </div>
