@@ -1,4 +1,4 @@
-export default function ServicesPage(){
+export default function ProductPage(){
     return(
         <div className="bg-black">
             

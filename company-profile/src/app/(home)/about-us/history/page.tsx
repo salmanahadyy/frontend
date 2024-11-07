@@ -4,7 +4,7 @@ export default function HistoryPage() {
   return (
     <div className="flex items-center flex-col mt-36">
       <div className="text-3xl">
-        <h1>TENTANG KAMI</h1>
+        <h1>OUR HISTORY</h1>
       </div>
       <div>
         <Image
