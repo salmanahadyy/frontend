@@ -1,3 +1,4 @@
+import ShareButton from "@/components/share";
 import Wrapper from "@/components/wrapper";
 import { getBlogs, getBlogSlug } from "@/libs/blog";
 import { IBlog } from "@/types/blog";
@@ -46,6 +47,7 @@ export default async function BlogDetail({
       <div className="flex flex-col lg:flex-row mt-12 w-full max-w-screen-lg mx-auto px-4">
         <div className="lg:flex-[2] mb-4 lg:mb-0">
           <Link href={"/"}>kembali</Link>
+          <ShareButton />
         </div>
 
         <div className="lg:flex-[5] box-content pr-0 lg:pr-56">
