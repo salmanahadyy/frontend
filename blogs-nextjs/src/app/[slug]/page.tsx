@@ -1,6 +1,7 @@
+import RecomBlog from "@/components/recom";
 import ShareButton from "@/components/share";
 import Wrapper from "@/components/wrapper";
-import { getBlogs, getBlogSlug } from "@/libs/blog";
+import { getBlogRecom, getBlogs, getBlogSlug } from "@/libs/blog";
 import { IBlog } from "@/types/blog";
 import { documentToReactComponents, Options } from "@contentful/rich-text-react-renderer";
 import { BLOCKS, MARKS } from "@contentful/rich-text-types";
@@ -32,6 +33,8 @@ export default async function BlogDetail({
   params: { slug: string };
 }) {
   const blog: IBlog = await getBlogSlug(params.slug);
+  const blogNe:IBlog[] =await getBlogRecom(params.slug)
+  console.log(blogNe)
   const options: Options = {
     renderMark: {
       [MARKS.ITALIC]: (text) => <span className="italic">{text}</span>,
@@ -47,6 +50,7 @@ export default async function BlogDetail({
       <div className="flex flex-col lg:flex-row mt-12 w-full max-w-screen-lg mx-auto px-4">
         <div className="lg:flex-[2] mb-4 lg:mb-0 max-sm:hidden ">
           <Link href={"/"}>kembali</Link>
+          <RecomBlog blogs={blogNe} />
           <div>
           <ShareButton slug={blog.fields.slug} />
           </div>
