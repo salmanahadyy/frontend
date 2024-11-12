@@ -1,5 +1,4 @@
 import Recomendation from "@/components/recom";
-import RecomBlog from "@/components/recom";
 import ShareButton from "@/components/share";
 import Wrapper from "@/components/wrapper";
 import { getBlogRecom, getBlogs, getBlogSlug } from "@/libs/blog";
