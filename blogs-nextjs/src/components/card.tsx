@@ -11,7 +11,7 @@ export default async function Card() {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-4 md:p-10">
       {data.map((item, idx) => (
         <Link
-          key={idx}
+          key={idx} data-cy="blog-item"
           href={`/${item.fields.slug}`}
           className="border shadow-xl rounded-2xl flex flex-col items-center p-4 bg-white transition-transform transform hover:scale-105"
         >

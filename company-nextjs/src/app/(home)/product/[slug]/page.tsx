@@ -1,11 +1,9 @@
-import Navbar from "@/components/navbar";
 import Wrapper from "@/components/wrapper";
 import { getBlogs, getBlogSlug } from "@/libs/blog";
 import { IBlog } from "@/types/blog";
 import { documentToReactComponents, Options } from "@contentful/rich-text-react-renderer";
 import { BLOCKS, MARKS } from "@contentful/rich-text-types";
 import Image from "next/image";
-import Link from "next/link";
 
 export const generateStaticParams = async () => {
   const blogs: IBlog[] = await getBlogs();

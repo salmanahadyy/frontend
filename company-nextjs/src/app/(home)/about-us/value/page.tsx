@@ -2,15 +2,15 @@ import Image from "next/image";
 
 export default function ValuePage() {
   return (
-    <div className="flex flex-col justify-center items-center h-auto md:h-[120vh] px-4 md:px-0">
-      
+    <div className="flex flex-col justify-center items-center h-auto md:h-[100vh] px-4 md:px-0 max-lg:pb-64 pb-5 max-sm:pt-10">
+
       {/* Heading Section */}
-      <div className="text-center text-2xl md:text-3xl mb-2 mt-2">
-        <h1>OUR VALUE</h1>
+      <div className="text-center text-3xl font-bold mt-10 pb-6 text-gray-800">
+        <h1 className="underline decoration-green-500 decoration-2">OUR VALUE</h1>
       </div>
       
       {/* Image Section */}
-      <div className="relative h-[350px] w-full max-w-[90%] md:max-w-[700px] mx-auto mb-2">
+      <div className="relative h-[350px] w-full max-w-[90%] md:max-w-[700px] mx-auto max-sm:-mt-14">
         <Image 
           src='/company.png'
           alt="logo"
@@ -20,12 +20,17 @@ export default function ValuePage() {
       </div>
 
       {/* Description Section */}
-      <div className="bg-green-500 w-full max-w-[90%] md:max-w-[500px] mx-auto px-6 md:px-12 py-5 text-center -mt-5 z-10 rounded-lg shadow-lg">
-        <h1 className="mb-2 font-bold text-lg md:text-xl">OUR VALUES</h1>
-        <p className="text-sm md:text-base">
-          Detoksifikasi dan nutrisi, merupakan dua nilai utama yang menjiwai setiap produk perawatan tubuh manusia dari Ya Salim House.
+      <div className="bg-gradient-to-r from-green-400 to-green-500 w-full max-w-[90%] md:max-w-[500px] mx-auto px-6 md:px-12 py-6 text-center -mt-8 z-10 rounded-lg shadow-xl transition-transform transform hover:scale-105 hover:shadow-2xl">
+        <h1 className="mb-2 font-extrabold text-lg md:text-xl text-white">
+          OUR VALUES
+        </h1>
+        <p className="text-sm md:text-base text-gray-100">
+          Detoxification and nutrition are the two core values that inspire every personal care product from Ya Salim House.
         </p>
       </div>
     </div>
   );
 }
+
+
+

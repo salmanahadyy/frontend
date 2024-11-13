@@ -8,6 +8,7 @@ export default async function ProductPage() {
     
     return (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-4 md:p-10">
+
         {data.map((item, idx) => (
           <Link
             key={idx}
@@ -28,7 +29,7 @@ export default async function ProductPage() {
             </div>
   
             <div className="w-full flex justify-center mt-auto">
-              <button className="btn btn-primary bg-black border-black text-white h-8 px-4 rounded-full">
+              <button className="btn btn-primary bg-green-500 text-white h-8 px-4 rounded-full">
                 Read more
               </button>
             </div>

@@ -5,7 +5,7 @@ export default function HistoryPage() {
     <div className="flex items-center flex-col mt-20 md:mt-36 px-4 md:px-0 pb-20">
       
       {/* Heading Section */}
-      <div className="text-2xl md:text-3xl text-center">
+      <div className="text-2xl md:text-3xl text-center underline decoration-green-500">
         <h1>OUR HISTORY</h1>
       </div>
 
@@ -23,37 +23,22 @@ export default function HistoryPage() {
       {/* Quote Section */}
       <div className="font-bold text-lg md:text-3xl mt-10 md:mt-[70px] w-full max-w-[90%] md:max-w-[1000px] text-center md:text-left">
         <h1>
-          "Ya Salim House adalah kisah seorang founder yang berawal dari
-          keprihatinan pribadi terhadap kesehatan keluarga dan perawatan rumah
-          tangga"
+        "Ya Salim House is the story of a founder that began from a personal concern for family health and household care."
         </h1>
       </div>
 
       {/* Paragraphs */}
       <div className="mt-8 md:mt-11 text-base md:text-lg w-full max-w-[90%] md:max-w-[1000px] text-justify">
         <p>
-          Di tahun 2015, Dina, founder Ya Salim House, mendirikan Komunitas
-          Baking Soda Indonesia, dengan misi sederhana namun mendalam: mencari
-          solusi sehat dan alami yang aman digunakan dalam kehidupan
-          sehari-hari.
+        In 2015, Dina, the founder of Ya Salim House, established the Baking Soda Indonesia Community with a simple yet profound mission: to find healthy and natural solutions that are safe for everyday use.
         </p>
       </div>
       <div className="mt-6 md:mt-8 text-base md:text-lg w-full max-w-[90%] md:max-w-[960px] text-justify">
         <p>
-          Di rumahnya, ia mulai bereksperimen dengan bahan-bahan mineral yang
-          mudah ditemukan dan bermanfaat. Produk-produk eksperimental yang
-          diciptakan ternyata membawa dampak positif yang nyata—kesehatan
-          pribadi dan keluarga meningkat, lingkungan rumah terasa lebih bersih,
-          dan efek detoksifikasi mulai dirasakan.
+        In her home, she began experimenting with easily accessible and beneficial mineral ingredients. The experimental products she created had a tangible positive impact—her personal and family health improved, the home environment felt cleaner, and detoxifying effects began to be noticed.
         </p>
         <p className="mt-6">
-          Berangkat dari pengalaman ini, lahirlah{" "}
-          <span className="font-bold">Ya Salim House</span>, perusahaan yang
-          menawarkan produk-produk berbasis mineral untuk mendukung kesehatan
-          dan perawatan rumah tangga. Dari sebuah kebutuhan pribadi, kini{" "}
-          <span className="font-bold">Ya Salim House</span> hadir untuk
-          menginspirasi orang lain menjalani gaya hidup yang lebih sehat dan
-          ramah lingkungan.
+        From this experience,<span className="font-bold"> Ya Salim House</span> was born—a company offering mineral-based products to support health and household care. What began as a personal need has now become <span className="font-bold">Ya Salim House</span>, here to inspire others to live a healthier and more eco-friendly lifestyle.
         </p>
       </div>
     </div>

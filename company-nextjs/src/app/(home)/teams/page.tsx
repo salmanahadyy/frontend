@@ -8,7 +8,7 @@ export default async function TeamPage() {
   console.log(data);
   return (
     <div className="mt-[80px]">
-      <h1 className="font-bold text-xl ml-8 md:ml-12 lg:ml-16 text-center md:text-left">
+      <h1 className="font-bold text-2xl ml-8 md:ml-12 lg:ml-16 text-center md:text-left">
         MEET OUR TEAM
       </h1>
       <Marquee className="mt-8 mb-20 md:mt-14 md:mb-32" gradient={false}>

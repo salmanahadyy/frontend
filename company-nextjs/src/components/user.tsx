@@ -6,30 +6,31 @@ export default async function UserRandom() {
   const { results }: { results: IUser[] } = await RandomUser();
   console.log(results);
   return (
-    <div className="flex gap-6">
+    <div className="flex gap-6 flex-wrap justify-center">
       {results.map((item, idx) => (
         <div
           key={idx}
-          className="bg-green-500 flex-shrink-0 w-[200px] h-[250px] md:w-[250px] md:h-[300px] lg:w-[300px] lg:h-[350px] mx-4 rounded-3xl p-5 flex flex-col items-center"
+          className="bg-emerald-500 flex-shrink-0 w-[250px] h-[320px] mx-4 my-6 rounded-2xl p-6 flex flex-col items-center shadow-lg transition-transform duration-300 hover:scale-105"
         >
-          <div className="flex justify-center bg-red-600 w-[120px] h-[120px] md:w-[150px] md:h-[150px] rounded-full overflow-hidden">
+          {/* Foto Profil dengan Border */}
+          <div className="flex justify-center w-[120px] h-[120px] md:w-[140px] md:h-[140px] rounded-full overflow-hidden border-4 border-gray-300 shadow-lg">
             <Image
               src={item.picture.large}
               alt={item.name.first}
-              width={150}
-              height={150}
+              width={140}
+              height={140}
               className="object-cover rounded-full"
             />
           </div>
-          <div className="flex mt-4 text-center gap-1">
-            <p>{item.name.title}</p>
-            <p>{item.name.first}</p>
-            <p>{item.name.last}</p>
+          
+          {/* Nama */}
+          <div className="mt-4 text-center text-xl font-semibold text-gray-900">
+            <p>{item.name.title}. {item.name.first} {item.name.last}</p>
           </div>
-          <div>
+
+          {/* Email dan Phone */}
+          <div className="mt-2 text-center text-sm text-gray-600">
             <p>{item.email}</p>
-          </div>
-          <div>
             <p>{item.phone}</p>
           </div>
         </div>
@@ -37,3 +38,6 @@ export default async function UserRandom() {
     </div>
   );
 }
+
+
+
