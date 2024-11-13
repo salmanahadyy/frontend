@@ -22,7 +22,7 @@ export default function Testimonials(){
                   <p className="text-sm text-gray-600">Customer</p>
                 </div>
               </div>
-              <p className="mb-4 italic">"The product is very useful; it's really awesome. The seller responds well and quickly, the shipping was fast with neat packaging, and the product arrived in good condition and as ordered. I've shopped here multiple times—thank you!"</p>
+              <p className="mb-4 italic">&quot;The product is very useful; it&apos;s really awesome. The seller responds well and quickly, the shipping was fast with neat packaging, and the product arrived in good condition and as ordered. I&apos;ve shopped here multiple times—thank you!&quot;</p>
             </div>
 
             {/* Testimonial 2 */}
@@ -40,8 +40,9 @@ export default function Testimonials(){
                   <p className="text-sm text-gray-600">Customer</p>
                 </div>
               </div>
-              <p className="mb-4 italic">"All Ya Salim House products are perfect for me, as I have sensitive skin."</p>
+              <p className="mb-4 italic">&quot;All Ya Salim House products are perfect for me, as I have sensitive skin.&quot;</p>
             </div>
+
             {/* Testimonial 3 */}
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <div className="flex items-center mb-4">
@@ -57,7 +58,7 @@ export default function Testimonials(){
                   <p className="text-sm text-gray-600">Customer</p>
                 </div>
               </div>
-              <p className="mb-4 italic">"I just tried it once, and I can already feel the difference... These Ya Salim products are amazing... 😍😍"</p>
+              <p className="mb-4 italic">&quot;I just tried it once, and I can already feel the difference... These Ya Salim products are amazing... 😍😍&quot;</p>
             </div>
           </div>
         </div>
