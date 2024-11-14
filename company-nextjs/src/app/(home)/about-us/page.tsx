@@ -5,15 +5,17 @@ export default function AboutUsPage() {
   return (
     <div className="pb-32">
       {/* Bagian Gambar Tim */}
-      <div
-        style={{
-          backgroundImage: "url(/team.avif)",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-        }}
-        className="h-[200px] sm:h-[250px] w-[80%] md:w-[60%] lg:w-[40%] mx-auto mt-10"
-      ></div>
+      <div className="relative h-[200px] sm:h-[250px] w-[80%] md:w-[60%] lg:w-[40%] mx-auto mt-10 overflow-hidden">
+            <Image 
+                src="/team.avif" 
+                alt="Team" 
+                layout="fill" 
+                objectFit="cover" 
+                objectPosition="center" 
+                priority 
+                quality={75} 
+            />
+        </div>
       
       {/* Bagian ABOUT US */}
       <div className="font-bold bg-zinc-200 w-[90%] md:w-[700px] lg:w-[900px] mx-auto px-4 md:px-8 lg:px-12 pb-6 shadow-lg rounded-lg">

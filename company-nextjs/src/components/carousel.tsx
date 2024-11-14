@@ -46,7 +46,7 @@ export default function CarouselProducts() {
             <SwiperSlide key={idx} className="swp">
               <Link href={product.href} className="group flex flex-col items-center gap-4" target="_blank">
                 <div className="relative h-36 w-48">
-                  <Image src={product.image} alt={product.alt} fill priority />
+                  <Image src={product.image} alt={product.alt} fill loading="lazy" />
                 </div>
                 <span className="text-xl text-center group-hover:border-b-2 border-red-500 group-hover:text-red-500 transition ease-linear">{product.title}</span>
               </Link>
