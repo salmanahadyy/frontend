@@ -20,6 +20,7 @@ export default async function UserRandom() {
               width={140}
               height={140}
               className="object-cover rounded-full"
+              priority
             />
           </div>
           

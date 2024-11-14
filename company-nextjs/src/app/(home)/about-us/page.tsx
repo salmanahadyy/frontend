@@ -7,7 +7,7 @@ export default function AboutUsPage() {
       {/* Bagian Gambar Tim */}
       <div
         style={{
-          backgroundImage: "url(/team.jpg)",
+          backgroundImage: "url(/team.avif)",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",

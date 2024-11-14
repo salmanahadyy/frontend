@@ -21,6 +21,7 @@ export default async function ProductPage() {
                 alt={item.fields.title}
                 layout="fill"
                 objectFit="cover"
+                priority
               />
             </div>
             

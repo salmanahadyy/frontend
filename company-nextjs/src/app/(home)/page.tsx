@@ -16,6 +16,7 @@ export default function HomePage() {
             layout="fill"
             objectFit="cover"
             className="absolute inset-0 z-0"
+            priority
           />
           {/* Content */}
           <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 sm:px-6 lg:px-8 text-center text-white bg-black/40">
