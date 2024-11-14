@@ -20,13 +20,17 @@ export default async function UserRandom() {
               width={140}
               height={140}
               className="object-cover rounded-full"
-              priority
+              priority // Keep only if above-the-fold
+              quality={75} // Optional: balance between quality and load time
+              sizes="(max-width: 768px) 120px, 140px" // Adjust image size based on viewport
             />
           </div>
-          
+
           {/* Nama */}
           <div className="mt-4 text-center text-xl font-semibold text-gray-900">
-            <p>{item.name.title}. {item.name.first} {item.name.last}</p>
+            <p>
+              {item.name.title}. {item.name.first} {item.name.last}
+            </p>
           </div>
 
           {/* Email dan Phone */}
@@ -39,6 +43,3 @@ export default async function UserRandom() {
     </div>
   );
 }
-
-
-
