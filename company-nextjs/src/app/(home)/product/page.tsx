@@ -25,7 +25,7 @@ export default async function ProductPage() {
               />
             </div>
             
-            <div className="text-lg font-bold text-center mb-3 w-full px-4">
+            <div className="text-lg font-bold text-center mb-3 w-full px-4 text-black">
               {item.fields.title}
             </div>
   

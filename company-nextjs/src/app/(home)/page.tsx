@@ -60,7 +60,7 @@ export default function HomePage() {
 
       {/* Company Overview */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto text-black">
           <h2 className="text-3xl font-bold mb-8 text-center underline decoration-green-500">
             Our Company
           </h2>
@@ -87,7 +87,7 @@ export default function HomePage() {
         </div>
       </section>
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto text-black">
           <h2 className="text-3xl font-bold mb-8 text-center underline decoration-green-500">
             Founder Yasalim House
           </h2>

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Testimonials(){
     return(
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100 mt-14">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto text-black">
           <h2 className="sm:text-3xl font-bold mb-12 text-center max-w-[400px] max-sm:w-[200px] max-sm:text-2xl mx-auto">What Our Customers Say About Yasalim House</h2>
           
           <div className="space-y-8">

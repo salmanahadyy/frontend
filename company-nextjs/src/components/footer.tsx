@@ -17,7 +17,7 @@ export default function Footer() {
                 className="mr-3 h-10"
                 loading="lazy"
               />
-              <span className="pt-1 text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <span className="pt-1 text-2xl font-semibold whitespace-nowrap text-black">
                 Yasalim House
               </span>
             </Link>

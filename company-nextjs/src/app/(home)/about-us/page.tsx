@@ -18,7 +18,7 @@ export default function AboutUsPage() {
         </div>
       
       {/* Bagian ABOUT US */}
-      <div className="font-bold bg-zinc-200 w-[90%] md:w-[700px] lg:w-[900px] mx-auto px-4 md:px-8 lg:px-12 pb-6 shadow-lg rounded-lg">
+      <div className="font-bold bg-zinc-200 w-[90%] md:w-[700px] lg:w-[900px] mx-auto px-4 md:px-8 lg:px-12 pb-6 shadow-lg rounded-lg text-black">
         <h1 className="p-4 sm:p-6 text-lg sm:text-xl text-center underline decoration-green-500">
           ABOUT US
         </h1>
