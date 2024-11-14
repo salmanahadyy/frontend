@@ -12,7 +12,7 @@ export default function Navbar() {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" className="flex items-center space-x-3">
           <Image src="/logo.jpeg" width={40} height={40} alt="yasalim logo" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white text-black">
+          <span className="self-center text-2xl font-semibold whitespace-nowrap text-black">
             Yasalim House
           </span>
         </Link>
